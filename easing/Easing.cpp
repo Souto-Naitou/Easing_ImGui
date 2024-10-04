@@ -15,6 +15,8 @@
 
 void (Easing::* Easing::easeFuncTable[])(float) =
 {
+	&Easing::EaseNone,
+
 	&Easing::EaseInSine,
 	&Easing::EaseOutSine,
 	&Easing::EaseInOutSine,

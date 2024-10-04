@@ -8,6 +8,12 @@
 
 float pi_float = static_cast<float>(std::numbers::pi);
 
+void Easing::EaseNone(float _t)
+{
+	easedT_ = _t;
+	return;
+}
+
 void Easing::EaseInSine(float _time)
 {
 	easedT_ = 1.0f - std::cosf((_time * pi_float) / 2.0f);

@@ -24,6 +24,8 @@ public:
     /// </summary>
     enum class EaseType : int
     {
+        EaseNone,
+
         EaseInSine,
         EaseOutSine,
         EaseInOutSine,
@@ -135,7 +137,7 @@ public:
 
 private:
     const std::string   fileName_           = "Easing.csv";                 // !< 書き込み先ファイル名
-    const char          kEaseTypes_[281]    = "EaseInSine\0EaseOutSine\0EaseInOutSine\0EaseInQuad\0EaseOutQuad\0EaseInOutQuad\0EaseInCubic\0EaseOutCubic\0EaseInOutCubic\0EaseInQuart\0EaseOutQuart\0EaseInOutQuart\0EaseInBack\0EaseOutBack\0EaseInOutBack\0EaseInElastic\0EaseOutElastic\0EaseInOutElastic\0EaseInBounce\0EaseOutBounce\0EaseInOutBounce\0";
+    const char          kEaseTypes_[290]    = "EaseNone\0EaseInSine\0EaseOutSine\0EaseInOutSine\0EaseInQuad\0EaseOutQuad\0EaseInOutQuad\0EaseInCubic\0EaseOutCubic\0EaseInOutCubic\0EaseInQuart\0EaseOutQuart\0EaseInOutQuart\0EaseInBack\0EaseOutBack\0EaseInOutBack\0EaseInElastic\0EaseOutElastic\0EaseInOutElastic\0EaseInBounce\0EaseOutBounce\0EaseInOutBounce\0";
     int                 selectedIndex_      = 0;
 
     EaseType            easeType_           = EaseType::COUNT;              // !< イージング方式
@@ -166,6 +168,8 @@ private:
     void EasingExecution();
 
     /// イージング関数郡
+    void EaseNone(float _t);
+
     void EaseInSine(float _t);
     void EaseOutSine(float _t);
     void EaseInOutSine(float _t);
