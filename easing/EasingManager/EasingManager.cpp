@@ -4,7 +4,12 @@
 
 #include <easing/EasingManager/EasingManager.h>
 #include <easing/Easing.h>
+
+
+#ifdef _DEBUG
 #include <imgui.h>
+#endif // _DEBUG
+
 
 void EasingManager::SetEasing(Easing* _easing)
 {
@@ -32,6 +37,8 @@ Easing* EasingManager::GetEasing(std::string _ID)
 	return nullptr;
 }
 
+
+#ifdef _DEBUG
 void EasingManager::DrawUI()
 {
 	if (isFirstFrame_)
@@ -63,3 +70,4 @@ void EasingManager::DrawUI()
 
 	ImGui::End();
 }
+#endif // _DEBUG
