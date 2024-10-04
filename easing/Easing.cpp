@@ -7,9 +7,10 @@
 #include <csvLoader/CSVLoader.h>
 #include <iostream>
 
+#include <easing/EasingManager/EasingManager.h>
+
 #ifdef _DEBUG
 #include <imgui.h>
-#include <easing/EasingManager/EasingManager.h>
 #endif //_DEBUG
 
 void (Easing::* Easing::easeFuncTable[])(float) =
