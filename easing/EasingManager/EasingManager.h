@@ -27,9 +27,7 @@ public:
     void DeleteEasing(Easing* _target);
     Easing* GetEasing(std::string _ID);
 
-    #ifdef _DEBUG
     void DrawUI();
-    #endif // _DEBUG
 
 private:
     std::list<Easing*> pEasings = {};

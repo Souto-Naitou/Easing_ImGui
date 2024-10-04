@@ -38,9 +38,10 @@ Easing* EasingManager::GetEasing(std::string _ID)
 }
 
 
-#ifdef _DEBUG
 void EasingManager::DrawUI()
 {
+	#ifdef _DEBUG
+
 	if (isFirstFrame_)
 	{
 		// 最初のフレームのみ呼び出しされる
@@ -69,5 +70,6 @@ void EasingManager::DrawUI()
 	}
 
 	ImGui::End();
+	
+	#endif // _DEBUG
 }
-#endif // _DEBUG
