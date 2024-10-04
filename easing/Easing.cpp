@@ -1,11 +1,15 @@
+// Copyright © 2024 Souto-Naitou. All rights reserved.
+// Licensed under the MIT License. See License.txt in the project root for license information.
+
+
 #include <easing/Easing.h>
 #include <cassert>
 #include <csvLoader/CSVLoader.h>
 #include <iostream>
 
 #ifdef _DEBUG
-#include <ImGuiManager.h>
-#include "easing/EasingManager/EasingManager.h"
+#include <imgui.h>
+#include <easing/EasingManager/EasingManager.h>
 #endif //_DEBUG
 
 void (Easing::* Easing::easeFuncTable[])(float) =

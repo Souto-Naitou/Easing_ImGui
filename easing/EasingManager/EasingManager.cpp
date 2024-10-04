@@ -1,6 +1,10 @@
-#include "EasingManager.h"
-#include "easing/Easing.h"
-#include <ImGuiManager.h>
+// Copyright © 2024 Souto-Naitou. All rights reserved.
+// Licensed under the MIT License. See License.txt in the project root for license information.
+
+
+#include <easing/EasingManager/EasingManager.h>
+#include <easing/Easing.h>
+#include <imgui.h>
 
 void EasingManager::SetEasing(Easing* _easing)
 {

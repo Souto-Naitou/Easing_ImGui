@@ -1,11 +1,13 @@
-// 
+// Copyright © 2024 Souto-Naitou. All rights reserved.
 // Licensed under the MIT License. See License.txt in the project root for license information.
 
-#pragma once
 
+#ifndef EASING_H_
+#define EASING_H_
+
+#include <csvLoader/CSVLoader.h>
 #include <string>
 #include <Windows.h>
-#include "../csvLoader"
 
 class CSVLoader;
 
@@ -192,3 +194,6 @@ private:
     void EaseOutBounce(float _t);
     void EaseInOutBounce(float _t);
 };
+
+
+#endif // EASING_H_

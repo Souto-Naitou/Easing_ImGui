@@ -1,4 +1,10 @@
-#pragma once
+// Copyright © 2024 Souto-Naitou. All rights reserved.
+// Licensed under the MIT License. See License.txt in the project root for license information.
+
+
+#ifndef CSVLOADER_H_
+#define CSVLOADER_H_
+
 #include <csvLoader/csvStructure/CSVData.h>
 
 #include <utility>
@@ -46,3 +52,6 @@ private:
 
   std::list<std::pair<std::string, CSVData>> fileData_;
 };
+
+
+#endif // CSVLOADER_H_

@@ -1,4 +1,10 @@
-#pragma once
+// Copyright © 2024 Souto-Naitou. All rights reserved.
+// Licensed under the MIT License. See License.txt in the project root for license information.
+
+
+#ifndef EASING_MANAGER_H_
+#define EASING_MANAGER_H_
+
 #include <list>
 #include <string>
 
@@ -27,3 +33,6 @@ private:
     std::list<Easing*> pEasings = {};
     bool isFirstFrame_ = true;
 };
+
+
+#endif // EASING_MANAGER_H_
