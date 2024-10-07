@@ -5,7 +5,7 @@
 #ifndef CSVLOADER_H_
 #define CSVLOADER_H_
 
-#include "CSVData.h"
+#include "csvStructure/CSVData.h"
 
 #include <utility>
 #include <string>

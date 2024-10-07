@@ -5,7 +5,7 @@
 #include "Easing.h"
 
 #include "CSVLoader.h"
-#include "EasingManager.h"
+#include "EasingManager/EasingManager.h"
 
 #include <cassert>
 #include <iostream>

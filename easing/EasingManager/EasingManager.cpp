@@ -3,7 +3,7 @@
 
 
 #include "EasingManager.h"
-#include "Easing.h"
+#include "../Easing.h"
 
 
 #ifdef _DEBUG
