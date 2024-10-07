@@ -5,7 +5,8 @@
 #ifndef EASING_H_
 #define EASING_H_
 
-#include <csvLoader/CSVLoader.h>
+#include "CSVLoader.h"
+
 #include <string>
 #include <Windows.h>
 

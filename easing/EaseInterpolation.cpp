@@ -2,7 +2,7 @@
 // Licensed under the MIT License. See License.txt in the project root for license information.
 
 
-#include <easing/Easing.h>
+#include "Easing.h"
 #include <cmath>
 #include <numbers>
 
