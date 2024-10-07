@@ -2,8 +2,8 @@
 // Licensed under the MIT License. See License.txt in the project root for license information.
 
 
-#include <easing/EasingManager/EasingManager.h>
-#include <easing/Easing.h>
+#include "EasingManager.h"
+#include "../Easing.h"
 
 
 #ifdef _DEBUG

@@ -2,12 +2,13 @@
 // Licensed under the MIT License. See License.txt in the project root for license information.
 
 
-#include <easing/Easing.h>
-#include <cassert>
-#include <csvLoader/CSVLoader.h>
-#include <iostream>
+#include "Easing.h"
 
-#include <easing/EasingManager/EasingManager.h>
+#include "CSVLoader.h"
+#include "EasingManager/EasingManager.h"
+
+#include <cassert>
+#include <iostream>
 
 #ifdef _DEBUG
 #include <imgui.h>

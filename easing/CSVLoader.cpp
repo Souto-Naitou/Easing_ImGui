@@ -2,7 +2,8 @@
 // Licensed under the MIT License. See License.txt in the project root for license information.
 
 
-#include <csvLoader/CSVLoader.h>
+#include "CSVLoader.h"
+
 #include <fstream>
 #include <sstream>
 #include <filesystem>
