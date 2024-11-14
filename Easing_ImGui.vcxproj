@@ -68,8 +68,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>$(SolutionDir)outputs\$(Configuration)\</OutDir>
-    <IntDir>$(SolutionDir)outputs\$(Configuration)\MiddleBuild</IntDir>
+    <OutDir>$(ProjectDir)outputs\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)outputs\$(Configuration)\MiddleBuild</IntDir>
     <TargetName>easing</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -77,8 +77,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>$(SolutionDir)outputs\$(Configuration)\</OutDir>
-    <IntDir>$(SolutionDir)outputs\$(Configuration)\MiddleBuild</IntDir>
+    <OutDir>$(ProjectDir)outputs\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)outputs\$(Configuration)\MiddleBuild</IntDir>
     <TargetName>easing</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
