@@ -159,6 +159,7 @@ CSVLoader::~CSVLoader()
 
 void CSVLoader::DebugWindow()
 {
+#ifdef _DEBUG
     ImGui::BeginChild("FileListChild", ImVec2(100, 0), ImGuiChildFlags_Border);
     if (ImGui::BeginTable("## bg", 1, ImGuiTableFlags_RowBg))
     {
@@ -210,4 +211,5 @@ void CSVLoader::DebugWindow()
     }
 
     ImGui::EndGroup();
+#endif
 }

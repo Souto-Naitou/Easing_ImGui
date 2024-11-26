@@ -70,6 +70,6 @@ void EasingManager::DrawUI()
 	}
 
 	ImGui::End();
-	
+
 	#endif // _DEBUG
 }
