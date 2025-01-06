@@ -48,9 +48,10 @@ void EasingManager::DrawUI()
 		ImGui::SetNextWindowSize(ImVec2(500, 600));
 		isFirstFrame_ = false;
 	}
+
+    if (!isDisplay_) return;
+
 	ImGui::Begin("Easing Parameters", nullptr);
-
-
 	ImGuiTableFlags tableFlags = ImGuiTableFlags_SizingStretchSame | ImGuiTableFlags_Resizable | ImGuiTableFlags_BordersOuter | ImGuiTableFlags_BordersInnerV | ImGuiTableFlags_BordersH;
 	if (ImGui::BeginTable("## table", 5, tableFlags))
 	{
@@ -70,6 +71,6 @@ void EasingManager::DrawUI()
 	}
 
 	ImGui::End();
-	
+
 	#endif // _DEBUG
 }
