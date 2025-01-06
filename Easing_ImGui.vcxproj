@@ -71,6 +71,7 @@
     <OutDir>$(ProjectDir)outputs\$(Configuration)\</OutDir>
     <IntDir>$(ProjectDir)outputs\$(Configuration)\MiddleBuild\</IntDir>
     <TargetName>easing</TargetName>
+    <PublicIncludeDirectories>$(ProjectDir)easing</PublicIncludeDirectories>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>true</LinkIncremental>
@@ -80,6 +81,7 @@
     <OutDir>$(ProjectDir)outputs\$(Configuration)\</OutDir>
     <IntDir>$(ProjectDir)outputs\$(Configuration)\MiddleBuild\</IntDir>
     <TargetName>easing</TargetName>
+    <PublicIncludeDirectories>$(ProjectDir)easing</PublicIncludeDirectories>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
