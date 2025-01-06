@@ -6,7 +6,7 @@
 #include "../Easing.h"
 
 
-#ifdef _DEBUG
+#if defined(_DEBUG) & defined(IMGUI_API)
 #include <imgui.h>
 #endif // _DEBUG
 
@@ -40,7 +40,7 @@ Easing* EasingManager::GetEasing(std::string _ID)
 
 void EasingManager::DrawUI()
 {
-	#ifdef _DEBUG
+#if defined(_DEBUG) & defined(IMGUI_API)
 
 	if (isFirstFrame_)
 	{
@@ -72,5 +72,5 @@ void EasingManager::DrawUI()
 
 	ImGui::End();
 
-	#endif // _DEBUG
+#endif // _DEBUG & IMGUI_API
 }

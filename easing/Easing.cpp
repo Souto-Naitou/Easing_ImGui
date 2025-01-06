@@ -11,7 +11,7 @@
 #include <iostream>
 
 
-#ifdef _DEBUG
+#if defined(_DEBUG) & defined(IMGUI_API)
 #include <imgui.h>
 #endif //_DEBUG
 
@@ -180,7 +180,7 @@ void Easing::Reset(){
 	isEnd_ = false;
 }
 
-#ifdef _DEBUG
+#if defined(_DEBUG) & defined(IMGUI_API)
 void Easing::ImGuiComponent(){
 	bool isChangeValue = false;
 

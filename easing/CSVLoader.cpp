@@ -8,13 +8,15 @@
 #include <sstream>
 #include <filesystem>
 #include <Windows.h>
+
+#if defined(_DEBUG) & defined(IMGUI_API)
 #include <imgui.h>
-#include <../../../Helper/ImGuiDebugManager/DebugManager.h>
+#endif // _DEBUG & IMGUI_API
+
 #include <functional> // std::function を使用するために必要
 
 CSVLoader::CSVLoader()
 {
-    DebugManager::GetInstance()->SetComponent("[Window]", "CSVLoader", std::bind(&CSVLoader::DebugWindow, this));
 }
 
 CSVData* CSVLoader::LoadFile(std::string _fileName)
@@ -159,7 +161,7 @@ CSVLoader::~CSVLoader()
 
 void CSVLoader::DebugWindow()
 {
-#ifdef _DEBUG
+#if defined(_DEBUG) & defined(IMGUI_API)
     ImGui::BeginChild("FileListChild", ImVec2(100, 0), ImGuiChildFlags_Border);
     if (ImGui::BeginTable("## bg", 1, ImGuiTableFlags_RowBg))
     {
